@@ -7,8 +7,8 @@ import { CommonDocsModule } from '@valor-software/common-docs';
 import { NpmStatisticService } from './getNpmStatistic.service';
 import { MainPageComponent } from "./main-page.component";
 import { FeedbackModule } from "@valor-software/feedback";
-import {GetPortfolioService, ProjectsRouteService} from "@valor-software/portfolio";
-
+import { GetPortfolioService, ProjectsRouteService } from "@valor-software/portfolio";
+import { CarouselModule } from '@valor-software/carousel';
 
 export { MainPageComponent } from "./main-page.component";
 
@@ -21,7 +21,8 @@ export { MainPageComponent } from "./main-page.component";
         RouterModule.forChild(routes),
         SwiperModule,
         CommonDocsModule,
-        FeedbackModule
+        FeedbackModule,
+        CarouselModule
     ],
     providers: [NpmStatisticService, GetPortfolioService, ProjectsRouteService]
 })

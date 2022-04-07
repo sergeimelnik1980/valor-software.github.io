@@ -21,8 +21,14 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@valor-software/blog-portfolio": [
+        "libs/route-pages/blog-portfolio/src/index.ts"
+      ],
       "@valor-software/careers": [
         "libs/route-pages/careers/src/index.ts"
+      ],
+      "@valor-software/carousel": [
+        "libs/carousel/src/index.ts"
       ],
       "@valor-software/common-docs": [
         "libs/common-docs/src/index.ts"
@@ -44,9 +50,6 @@
       ],
       "@valor-software/services-page": [
         "libs/route-pages/services-page/src/index.ts"
-      ],
-      "@valor-software/blog-portfolio": [
-        "libs/route-pages/blog-portfolio/src/index.ts"
       ]
     }
   },

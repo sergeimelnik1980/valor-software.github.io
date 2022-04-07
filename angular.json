@@ -1,6 +1,52 @@
 {
   "version": 1,
   "projects": {
+    "carousel": {
+      "projectType": "library",
+      "root": "libs/carousel",
+      "sourceRoot": "libs/carousel/src",
+      "prefix": "valor-software-site-base",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "outputs": [
+            "dist/libs/carousel"
+          ],
+          "options": {
+            "project": "libs/carousel/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/carousel/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "libs/carousel/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/libs/carousel"
+          ],
+          "options": {
+            "jestConfig": "libs/carousel/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/carousel/src/**/*.ts",
+              "libs/carousel/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
     "common-docs": {
       "projectType": "library",
       "root": "libs/common-docs",
