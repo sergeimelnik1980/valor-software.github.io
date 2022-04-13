@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { ContactModalComponent, ModalService } from "@valor-software/common-docs";
+import Processor from 'asciidoctor'
 
+const processor = Processor()
 const advantagesList = [
     {
         title: 'Full-Cycle MVP Development',
@@ -51,7 +53,10 @@ export class StartupsComponent {
 
     constructor(
         private modalService: ModalService<ContactModalComponent>
-    ) {}
+    ) {
+        let html = processor.convert('Hello, _Asciidoctor_')
+        console.log('test html', html)
+    }
 
     openModal() {
         this.modalService.open(ContactModalComponent);
