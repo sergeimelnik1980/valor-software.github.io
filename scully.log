@@ -1,8 +1,0 @@
-NOTICE:
-****************************************************************************************
-  This is a development tool for Scully applications.
-  You can ignore the warning (TLS) or run scully with --no-warning
-****************************************************************************************
-Sent kill command to other server
-
-handleUnknownRoute: "/assets/blog/articles/Career_Path_for_a_Flat-structured_Company.json", 404:""
