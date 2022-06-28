@@ -16,6 +16,6 @@ export class ServicesBlockComponent {
     ) {}
 
     getRouteLink(link: string) {
-        return [`/${link}`];
+        return this.preview ? [`services/${link}`] : [`${link}`];
     }
 }
